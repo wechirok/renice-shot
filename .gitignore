@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+.vscode/
+build/
+run/
+out/
+
+*.iml
+.classpath
+.project
+.settings/
+
+.DS_Store
+Thumbs.db
+hs_err_pid*.log
