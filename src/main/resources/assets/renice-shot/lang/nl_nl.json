@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Screenshot configuratie",
+  "renice-shot.config.custom_file_name": "Gebruik een ander formaat voor bestandsnaam",
+  "renice-shot.config.custom_file_name.tooltip": "Gebruik %time% voor de tijd,\n %world% voor de naam van de wereld of server",
+  "renice-shot.config.override_screenshot_key": "Vervang normale screenshot met Renice Shot",
+  "renice-shot.config.hide_hud": "Verberg de HUD automatisch",
+  "renice-shot.config.save_file": "Sla het screenshotbestand op",
+  "renice-shot.config.disable_gui_scaling": "Zet GUI schaalvergroting uit",
+  "renice-shot.config.width": "Screenshot breedte",
+  "renice-shot.config.height": "Screenshot hoogte",
+  "renice-shot.config.delay": "Opname vertraging",
+  "renice-shot.config.delay.tooltip": "Frames te wachten na het wijzigen van de grootte. Verander voor betere belichting met shaders",
+  "renice-shot.config.file_format": "Bestandsformaat",
+  "key.renice-shot.screenshot": "Neem een grote screenshot"
+}

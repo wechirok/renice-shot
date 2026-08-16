@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Konfigurasi tangkapan layar",
+  "renice-shot.config.custom_file_name": "Gunakan format nama fail yang berbeza",
+  "renice-shot.config.custom_file_name.tooltip": "Gunakan %time% untuk masa,\n %world% untuk nama dunia atau pelayan",
+  "renice-shot.config.override_screenshot_key": "Gantikan tangkapan layar biasa dengan Renice Shot",
+  "renice-shot.config.hide_hud": "Sembunyikan HUD secara automatik",
+  "renice-shot.config.save_file": "Simpan fail tangkapan layar",
+  "renice-shot.config.disable_gui_scaling": "Nyahdayakan penskalaan GUI",
+  "renice-shot.config.width": "Lebar tangkapan layar",
+  "renice-shot.config.height": "Tinggi tangkapan layar",
+  "renice-shot.config.delay": "Kelewatan tangkapan",
+  "renice-shot.config.delay.tooltip": "Bilangan bingkai untuk menunggu selepas saiz semula. Ubah untuk pendedahan yang lebih baik dengan pembayang",
+  "renice-shot.config.file_format": "Format fail",
+  "key.renice-shot.screenshot": "Ambil tangkapan layar besar"
+}

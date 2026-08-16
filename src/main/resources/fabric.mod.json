@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "renice-shot",
+  "version": "${version}",
+  "icon": "assets/renice-shot/icon.png",
+  "environment": "client",
+  "mixins": [
+    "mixins.renice-shot.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "me.wechirok.reniceshot.ReniceShot::initialize"
+    ],
+    "modmenu": [
+      "me.wechirok.reniceshot.config.ModMenuBridge"
+    ]
+  },
+  "name": "Renice Shot",
+  "description": "Take high resolution screenshots because why not",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "modmenu": "*",
+    "cloth-config": "*"
+  },
+  "authors": [
+    "wechirok"
+  ],
+  "license": [
+    "MIT"
+  ]
+}

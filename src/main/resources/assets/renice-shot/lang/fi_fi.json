@@ -1,0 +1,13 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Kuvankaappauksen asetukset",
+  "renice-shot.config.custom_file_name": "Käytä omaa tiedostonimimuotoa",
+  "renice-shot.config.custom_file_name.tooltip": "%time% korvataan ajalla,\n %world% maailman tai palvelimen nimellä",
+  "renice-shot.config.override_screenshot_key": "Korvaa tavallinen kuvankaappaus Renice Shotilla",
+  "renice-shot.config.save_file": "Tallenna kuvankaappaustiedosto",
+  "renice-shot.config.width": "Kuvankaappauksen leveys",
+  "renice-shot.config.height": "Kuvankaappauksen korkeus",
+  "renice-shot.config.delay": "Kaappauksen viive",
+  "renice-shot.config.delay.tooltip": "Skaalauksen jälkeen odotettavien kuvien määrä. Säädä parempaa valotusta varten varjostimien kanssa",
+  "key.renice-shot.screenshot": "Ota suuri kuvankaappaus"
+}

@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Налады скрыншотаў",
+  "renice-shot.config.custom_file_name": "Выкарыстоўваць іншую назву файла",
+  "renice-shot.config.custom_file_name.tooltip": "Выкарыстоўваць %time% для часу,\n %world% для свету ці серверу",
+  "renice-shot.config.override_screenshot_key": "Перазапісаць звычайны скрыншот Renice Shot",
+  "renice-shot.config.hide_hud": "Аўтаматычна хаваць HUD",
+  "renice-shot.config.save_file": "Захаваць файл скрыншоту",
+  "renice-shot.config.disable_gui_scaling": "Адключыць маштабаванне GUI",
+  "renice-shot.config.width": "Щырыня скрыншоту",
+  "renice-shot.config.height": "Вышыня скрыншоту",
+  "renice-shot.config.delay": "Затрымка скрыншота",
+  "renice-shot.config.delay.tooltip": "Кадры, якія чакаюць пасля змены памеру. Наладзьце лепшую экспазіцыю з дапамогай шэйдараў",
+  "renice-shot.config.file_format": "Фармат файла",
+  "key.renice-shot.screenshot": "Зрабіць вялікі скрыншот"
+}

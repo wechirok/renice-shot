@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Cấu hình ảnh chụp màn hình",
+  "renice-shot.config.custom_file_name": "Sử dụng định dạng tên tệp khác",
+  "renice-shot.config.custom_file_name.tooltip": "Sử dụng %time% cho thời gian,\n %world% cho tên thế giới hoặc máy chủ",
+  "renice-shot.config.override_screenshot_key": "Ghi đè ảnh chụp màn hình bình thường bằng Renice Shot",
+  "renice-shot.config.hide_hud": "Tự động ẩn HUD",
+  "renice-shot.config.save_file": "Lưu tệp ảnh chụp màn hình",
+  "renice-shot.config.disable_gui_scaling": "Tắt mở rộng GUI",
+  "renice-shot.config.width": "Chiều rộng ảnh chụp màn hình",
+  "renice-shot.config.height": "Chiều cao ảnh chụp màn hình",
+  "renice-shot.config.delay": "Độ trễ chụp",
+  "renice-shot.config.delay.tooltip": "Số khung hình chờ sau khi thay đổi kích thước. Tinh chỉnh để hiển thị tốt hơn với shader",
+  "renice-shot.config.file_format": "Định dạng tệp",
+  "key.renice-shot.screenshot": "Chụp ảnh màn hình lớn"
+}

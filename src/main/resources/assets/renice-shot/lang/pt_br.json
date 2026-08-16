@@ -1,0 +1,13 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Configuração da captura de tela",
+  "renice-shot.config.custom_file_name": "Usar formato de nome de arquivo diferente",
+  "renice-shot.config.custom_file_name.tooltip": "Use %time% para o tempo,\n %world% para o mundo ou nome do servidor",
+  "renice-shot.config.override_screenshot_key": "Substitua a captura de tela normal com Renice Shot",
+  "renice-shot.config.save_file": "Salve o arquivo de captura de tela",
+  "renice-shot.config.width": "Largura da captura de tela",
+  "renice-shot.config.height": "Altura da captura de tela",
+  "renice-shot.config.delay": "Atraso de captura",
+  "renice-shot.config.delay.tooltip": "Quadros para aguardar após o redimensionamento. Ajuste para melhor exposição com shaders",
+  "key.renice-shot.screenshot": "Captura de tela grande"
+}

@@ -1,0 +1,13 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Розмір знімку екрана",
+  "renice-shot.config.custom_file_name": "Використовувати інший формат назви файлу",
+  "renice-shot.config.custom_file_name.tooltip": "Умовні позначення:\n%time% - час створення знімку\n%world% - назва світу або серверу",
+  "renice-shot.config.override_screenshot_key": "Замінити стандартний знімок на Renice Shot",
+  "renice-shot.config.save_file": "Зберегти файл знімка",
+  "renice-shot.config.width": "Ширина знімка",
+  "renice-shot.config.height": "Висота знімка",
+  "renice-shot.config.delay": "Затримка знімка",
+  "renice-shot.config.delay.tooltip": "Кількість кадрів очікування після зміни розміру. Змінюйте цей параметр для кращої експозиції з шейдерами",
+  "key.renice-shot.screenshot": "Зробити великий знімок"
+}

@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Ekran görüntüsü ayarları",
+  "renice-shot.config.custom_file_name": "Başka dosya ismi formatı kullan",
+  "renice-shot.config.custom_file_name.tooltip": "Zaman için %time%,\n dünya ya da sunucu adı için %world% kullanın",
+  "renice-shot.config.override_screenshot_key": "Normal ekran görüntüsünü Renice Shot ile değiştir",
+  "renice-shot.config.hide_hud": "HUD'ı otomatik olarak gizle",
+  "renice-shot.config.save_file": "Ekran görüntüsü dosyasını kaydet",
+  "renice-shot.config.disable_gui_scaling": "Arayüz ölçeğini kapat",
+  "renice-shot.config.width": "Ekran görüntüsü eni",
+  "renice-shot.config.height": "Ekran görüntüsü boyu",
+  "renice-shot.config.delay": "Yakalama gecikmesi",
+  "renice-shot.config.delay.tooltip": "Yeniden boyutlandırmadan sonra beklenecek kare. Shaderlar ile daha iyi pozlama için kurcalayabilirsiniz",
+  "renice-shot.config.file_format": "Dosya formatı",
+  "key.renice-shot.screenshot": "Büyük Ekran Görüntüsü Alma"
+}

@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Configuration de capture d'écran",
+  "renice-shot.config.custom_file_name": "Utiliser un format de nom de fichier différent",
+  "renice-shot.config.custom_file_name.tooltip": "Utilisez %time% pour l'heure,\n %world% pour le monde ou le nom du serveur",
+  "renice-shot.config.override_screenshot_key": "Remplacer la capture d'écran normale par Renice Shot",
+  "renice-shot.config.hide_hud": "Masquer automatiquement l'interface utilisateur (HUD)",
+  "renice-shot.config.save_file": "Enregistrer le fichier de capture d'écran",
+  "renice-shot.config.disable_gui_scaling": "Désactiver le redimensionnement de l'interface utilisateur (GUI)",
+  "renice-shot.config.width": "Largeur de la capture d'écran",
+  "renice-shot.config.height": "Hauteur de la capture d'écran",
+  "renice-shot.config.delay": "Délai de capture",
+  "renice-shot.config.delay.tooltip": "Images à attendre après le redimensionnement. Ajustez pour une meilleure exposition avec des shaders",
+  "renice-shot.config.file_format": "Format de fichier",
+  "key.renice-shot.screenshot": "Prendre une grande capture d'écran"
+}

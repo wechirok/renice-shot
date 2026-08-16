@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Skärmdumps konfiguration",
+  "renice-shot.config.custom_file_name": "Använd ett annat filfromat",
+  "renice-shot.config.custom_file_name.tooltip": "Använd %time% för tid,\n %world% för värld eller servernamn",
+  "renice-shot.config.override_screenshot_key": "Override normal screenshot with Renice Shot",
+  "renice-shot.config.hide_hud": "Göm HUD automatiskt",
+  "renice-shot.config.save_file": "Spara skärmdumpsfilen",
+  "renice-shot.config.disable_gui_scaling": "Disable GUI scaling",
+  "renice-shot.config.width": "Skärmdumpsbredd",
+  "renice-shot.config.height": "Skärmdumpshöjd",
+  "renice-shot.config.delay": "Fördröjning för bild",
+  "renice-shot.config.delay.tooltip": "Frames att vänta efter resizing. Ändra för bättre exponering med shaders",
+  "renice-shot.config.file_format": "Filformat",
+  "key.renice-shot.screenshot": "Ta stor skärmdump"
+}

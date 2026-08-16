@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "螢幕擷取畫面設定",
+  "renice-shot.config.custom_file_name": "使用不同的檔案名稱格式",
+  "renice-shot.config.custom_file_name.tooltip": "用 %time% 代替時間，\n用 %world% 代替世界或伺服器名稱",
+  "renice-shot.config.override_screenshot_key": "用 Renice Shot 覆蓋一般螢幕擷取畫面",
+  "renice-shot.config.hide_hud": "自動隱藏 HUD",
+  "renice-shot.config.save_file": "儲存螢幕擷取畫面檔案",
+  "renice-shot.config.disable_gui_scaling": "停用介面大小",
+  "renice-shot.config.width": "螢幕擷取畫面寬度",
+  "renice-shot.config.height": "螢幕擷取畫面高度",
+  "renice-shot.config.delay": "螢幕擷取畫面延遲",
+  "renice-shot.config.delay.tooltip": "調整大小後等待 FPS，使用光影包調整曝光以達到更好的效果",
+  "renice-shot.config.file_format": "檔案格式",
+  "key.renice-shot.screenshot": "高解析度擷取螢幕畫面"
+}

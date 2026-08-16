@@ -1,0 +1,18 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "スクリーンショット設定",
+  "renice-shot.config.custom_file_name": "ファイル名テンプレート",
+  "renice-shot.config.custom_file_name.tooltip": "「%time%」は撮影日時に、「%world%」はワールド名またはサーバー名に置き換えられます。",
+  "renice-shot.config.override_screenshot_key": "通常のスクリーンショットを置き換える",
+  "renice-shot.config.hide_hud": "GUIを自動で隠す",
+  "renice-shot.config.save_file": "スクリーンショットをファイルに保存",
+  "renice-shot.config.disable_gui_scaling": "GUIを拡大しない",
+  "renice-shot.config.width": "スクリーンショットの幅",
+  "renice-shot.config.height": "スクリーンショットの高さ",
+  "renice-shot.config.delay": "露光フレーム数",
+  "renice-shot.config.delay.tooltip": "撮影前に待機するフレーム数。シェーダーの露出やボケを微調整できます。",
+  "renice-shot.config.file_format": "ファイル形式",
+  "key.renice-shot.screenshot": "高解像度スクリーンショットの撮影",	
+  "modmenu.summaryTranslation.renice-shot": "4Kスクリーンショット撮影",
+  "modmenu.descriptionTranslation.renice-shot": "モニターの解像度を超えて、高解像度のスクリーンショットを撮影できます。"
+}

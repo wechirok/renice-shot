@@ -1,0 +1,100 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2021 Ramid Khan
+ * Copyright (c) 2026 Wechirok
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+package me.wechirok.reniceshot.capture;
+
+import com.mojang.blaze3d.platform.NativeImage;
+import me.wechirok.reniceshot.config.Config;
+import me.wechirok.reniceshot.config.FileFormat;
+import me.wechirok.reniceshot.event.ScreenshotSaveCallback;
+import org.lwjgl.stb.STBIWriteCallback;
+import org.lwjgl.stb.STBImageWrite;
+
+import java.io.Closeable;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.channels.WritableByteChannel;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class FramebufferWriter {
+
+    public static void write(NativeImage image, Path file) throws IOException {
+        write(image, file, Config.CAPTURE_FILE_FORMAT);
+    }
+
+    public static void write(NativeImage image, Path file, FileFormat fileFormat) throws IOException {
+        try (FileChannel fc = FileChannel.open(file, StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
+             WriteCallback callback = new WriteCallback(fc)) {
+            int result = switch (fileFormat) {
+                case PNG -> STBImageWrite.nstbi_write_png_to_func(callback.address(), 0L, image.getWidth(), image.getHeight(), image.format().components(), image.getPointer(), 0);
+                case JPG -> STBImageWrite.nstbi_write_jpg_to_func(callback.address(), 0L, image.getWidth(), image.getHeight(), image.format().components(), image.getPointer(), 90);
+                case TGA -> STBImageWrite.nstbi_write_tga_to_func(callback.address(), 0L, image.getWidth(), image.getHeight(), image.format().components(), image.getPointer());
+                case BMP -> STBImageWrite.nstbi_write_bmp_to_func(callback.address(), 0L, image.getWidth(), image.getHeight(), image.format().components(), image.getPointer());
+            };
+
+            if (callback.exception != null) {
+                throw callback.exception;
+            }
+            if (result == 0) {
+                throw new IOException("STB failed to encode the screenshot as " + fileFormat);
+            }
+        }
+
+        ScreenshotSaveCallback.EVENT.invoker().onSaved(file);
+    }
+
+    private static class WriteCallback extends STBIWriteCallback implements AutoCloseable, Closeable {
+        private final WritableByteChannel channel;
+        private IOException exception;
+
+        private WriteCallback(WritableByteChannel channel) {
+            this.channel = channel;
+        }
+
+        @Override
+        public void invoke(long context, long data, int size) {
+            if (this.exception != null) {
+                return;
+            }
+
+            ByteBuffer buf = STBIWriteCallback.getData(data, size);
+
+            try {
+                while (buf.hasRemaining()) {
+                    this.channel.write(buf);
+                }
+            } catch (IOException e) {
+                this.exception = e;
+            }
+        }
+
+        @Override
+        public void close() {
+            this.free();
+        }
+    }
+}

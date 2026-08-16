@@ -1,0 +1,15 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "Screenshot configuration",
+  "renice-shot.config.custom_file_name": "Use different filename format",
+  "renice-shot.config.custom_file_name.tooltip": "Use %time% for the time,\n %world% for world or server name",
+  "renice-shot.config.override_screenshot_key": "Override normal screenshot with Renice Shot",
+  "renice-shot.config.hide_hud": "Automatically hide the HUD",
+  "renice-shot.config.save_file": "Save the screenshot file",
+  "renice-shot.config.width": "Screenshot width",
+  "renice-shot.config.height": "Screenshot height",
+  "renice-shot.config.delay": "Capture delay",
+  "renice-shot.config.delay.tooltip": "Frames to wait after resizing. Tweak for better exposure with shaders",
+  "renice-shot.config.file_format": "File format",
+  "key.renice-shot.screenshot": "Take large screenshot"
+}

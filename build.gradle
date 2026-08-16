@@ -1,0 +1,61 @@
+plugins {
+    id("net.fabricmc.fabric-loom") version "1.17.19"
+}
+
+group = "me.wechirok"
+version = System.getenv("RENICE_SHOT_VERSION") ?: "1.0.0+mc26.2"
+
+String mod_version = version.toString()
+String minecraft_version = "26.2"
+
+repositories {
+    maven {
+        name = "TerraformersMC"
+        url = uri("https://maven.terraformersmc.com/releases/")
+
+        content {
+            includeGroup("com.terraformersmc")
+        }
+    }
+
+    maven {
+        name = "shedaniel"
+        url = uri("https://maven.shedaniel.me/")
+
+        content {
+            includeGroup("me.shedaniel.cloth")
+        }
+    }
+}
+
+dependencies {
+    minecraft("com.mojang:minecraft:${minecraft_version}")
+    implementation("net.fabricmc:fabric-loader:0.19.3")
+
+    implementation("net.fabricmc.fabric-api:fabric-api:0.157.0+26.2")
+    implementation("com.terraformersmc:modmenu:20.0.1")
+    implementation("me.shedaniel.cloth:cloth-config-fabric:26.2.155")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+    options.release = 25
+    options.compilerArgs.add("-Xlint:deprecation")
+}
+
+processResources {
+    inputs.property("version", mod_version)
+    inputs.property("minecraft_version", minecraft_version)
+
+    from("LICENSE")
+
+    filesMatching("fabric.mod.json") {
+        expand("version": mod_version, "minecraft_version": minecraft_version)
+    }
+}

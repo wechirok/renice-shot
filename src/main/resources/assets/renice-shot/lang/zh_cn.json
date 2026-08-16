@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "截图配置",
+  "renice-shot.config.custom_file_name": "使用不同的文件名格式",
+  "renice-shot.config.custom_file_name.tooltip": "使用 %time% 来表示时间，\n使用 %world% 来表示世界或服务器名称。",
+  "renice-shot.config.override_screenshot_key": "使用 Renice Shot 替换原版默认的截图功能",
+  "renice-shot.config.hide_hud": "自动隐藏 HUD",
+  "renice-shot.config.save_file": "保存截图文件",
+  "renice-shot.config.disable_gui_scaling": "禁用界面尺寸缩放",
+  "renice-shot.config.width": "截图宽度",
+  "renice-shot.config.height": "截图高度",
+  "renice-shot.config.delay": "截图延迟",
+  "renice-shot.config.delay.tooltip": "图像尺寸调整完毕后，在截图前需要等待的帧数。\n在使用光影时，若想在截图时获得更好的曝光效果，则需要调整该值。",
+  "renice-shot.config.file_format": "文件格式",
+  "key.renice-shot.screenshot": "截图（高分辨率）"
+}

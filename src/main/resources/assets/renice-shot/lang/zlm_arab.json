@@ -1,0 +1,16 @@
+{
+  "renice-shot.config.title": "Renice Shot",
+  "renice-shot.config.category": "کونفيݢوراسي تڠکڤن لاير",
+  "renice-shot.config.custom_file_name": "ݢوناکن فورمت نام فاٴيل يڠ بربيذا",
+  "renice-shot.config.custom_file_name.tooltip": "ݢوناکن %time% اونتوق ماس⹁\n %world% اونتوق نام دنيا اتاو ڤلاين",
+  "renice-shot.config.override_screenshot_key": "ݢنتيکن تڠکڤن لاير بياسا دڠن Renice Shot",
+  "renice-shot.config.hide_hud": "سمبوڽيکن HUD سچارا اٴوتوماتيک",
+  "renice-shot.config.save_file": "سيمڤن فاٴيل تڠکڤن لاير",
+  "renice-shot.config.disable_gui_scaling": "ڽهداياکن ڤنسکالاٴن GUI",
+  "renice-shot.config.width": "لبر تڠکڤن لاير",
+  "renice-shot.config.height": "تيڠݢي تڠکڤن لاير",
+  "renice-shot.config.delay": "کليواتن تڠکڤن",
+  "renice-shot.config.delay.tooltip": "بيلڠن بيڠکاي اونتوق منوڠݢو سلڤس ساٴيز سمولا. اوبه اونتوق ڤنددهن يڠ لبيه باٴيق دڠن ڤمبايڠ",
+  "renice-shot.config.file_format": "فورمت فاٴيل",
+  "key.renice-shot.screenshot": "امبيل تڠکڤن لاير بسر"
+}
