@@ -6,4 +6,6 @@ A fork of [Fabrishot](https://github.com/ramidzkh/fabrishot), maintained for mc 
 
 ## Download
 
+
+[![MODRINTH](https://cdn.modrinth.com/data/ZDCwiIc3/versions/Grf7gEu1/renice-shot-1.0.0%2Bmc26.2.jar?mr_download_reason=standalone)
 [![CURSEFORGE](https://img.shields.io/badge/CURSEFORGE-F16436?style=for-the-badge&logo=curseforge&logoColor=white&labelColor=000000)](https://www.curseforge.com/minecraft/mc-mods/renice-shot)
