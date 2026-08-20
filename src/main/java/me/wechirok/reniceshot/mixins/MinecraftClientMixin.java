@@ -46,7 +46,6 @@ public class MinecraftClientMixin {
 
     @Inject(method = "handleGlobalKeyPress", at = @At(value = "FIELD", target = "Lnet/minecraft/client/Options;keyScreenshot:Lnet/minecraft/client/KeyMapping;", opcode = Opcodes.GETFIELD))
     private void preScreenshot(InputConstants.Key key, boolean controlDown, CallbackInfoReturnable<Boolean> cir) {
-        // Injecting here allows us to work inside other menus.
         if (ReniceShot.SCREENSHOT_BINDING.matches(key)) {
             ReniceShot.startCapture();
         }
