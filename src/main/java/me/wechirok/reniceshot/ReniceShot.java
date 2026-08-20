@@ -126,8 +126,6 @@ public class ReniceShot {
     }
 
     private static void refresh() {
-        // Since 26.2, framebuffer resizing is handled during frame extraction.
-        // Only the GUI-scaled dimensions need to be refreshed here.
         Minecraft.getInstance().resizeGui();
     }
 
@@ -171,7 +169,6 @@ public class ReniceShot {
             }
 
             try {
-                // Reserve the path atomically before the image is written on the IO pool.
                 return Files.createFile(file);
             } catch (FileAlreadyExistsException ignored) {
                 continue;
