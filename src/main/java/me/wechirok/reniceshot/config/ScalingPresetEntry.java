@@ -43,7 +43,7 @@ public class ScalingPresetEntry extends AbstractConfigListEntry<Unit> {
     private final List<Button> children;
     private final int width;
 
-    @SuppressWarnings("deprecation") // Cloth Config exposes no public replacement for updating these fields.
+    @SuppressWarnings("deprecation")
     public ScalingPresetEntry(int myWidth, IntegerListEntry widthConfig, IntegerListEntry heightConfig) {
         super(Component.empty(), false);
 
