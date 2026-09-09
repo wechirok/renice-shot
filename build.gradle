@@ -1,5 +1,6 @@
 plugins {
     id("net.fabricmc.fabric-loom") version "1.17.19"
+    id("me.modmuss50.mod-publish-plugin") version "2.2.0"
 }
 
 group = "me.wechirok"
@@ -57,5 +58,42 @@ processResources {
 
     filesMatching("fabric.mod.json") {
         expand("version": mod_version, "minecraft_version": minecraft_version)
+    }
+}
+
+publishMods {
+    displayName = "Renice Shot ${project.version}"
+    changelog = "View changelog at [the release page](https://github.com/wechirok/renice-shot/releases/tag/${project.version})"
+    dryRun = providers.environmentVariable("PUBLISH_DRY_RUN").orElse("false").get().toBoolean()
+
+    if (mod_version.contains("alpha")) {
+        type = ALPHA
+    } else if (mod_version.contains("beta") || mod_version.contains("rc")) {
+        type = BETA
+    } else {
+        type = STABLE
+    }
+
+    file = jar.archiveFile
+    modLoaders.add("fabric")
+
+    curseforge {
+        accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
+        projectId = "1655703"
+        minecraftVersions.add(minecraft_version)
+        requires("fabric-api")
+        optional("modmenu")
+        optional("cloth-config")
+        client = true
+        server = false
+    }
+
+    modrinth {
+        accessToken = providers.environmentVariable("MODRINTH_API_KEY")
+        projectId = "ZDCwiIc3"
+        minecraftVersions.add(minecraft_version)
+        requires("fabric-api")
+        optional("modmenu")
+        optional("cloth-config")
     }
 }
