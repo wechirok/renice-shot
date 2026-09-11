@@ -10,6 +10,7 @@ String mod_version = version.toString()
 String release_tag = mod_version.replace("+", "%2B")
 String minecraft_version = "26.3-rc-1"
 String minecraft_dependency = "26.3-rc.1"
+String curseforge_minecraft_version = minecraft_version.contains("-") ? "${minecraft_version.substring(0, minecraft_version.indexOf('-'))}-snapshot" : minecraft_version
 
 repositories {
     maven {
@@ -87,9 +88,7 @@ publishMods {
     curseforge {
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
         projectId = "1655703"
-        if (!minecraft_version.contains("-")) {
-            minecraftVersions.add(minecraft_version)
-        }
+        minecraftVersions.add(curseforge_minecraft_version)
         requires("fabric-api")
         optional("modmenu")
         optional("cloth-config")
