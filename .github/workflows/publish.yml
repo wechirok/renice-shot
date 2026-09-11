@@ -4,6 +4,22 @@ on:
   release:
     types:
       - published
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag
+        required: true
+        type: string
+      target:
+        description: Publishing target
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - github
+          - modrinth
+          - curseforge
 
 permissions:
   contents: write
@@ -28,15 +44,22 @@ jobs:
       - name: Build
         run: ./gradlew build
         env:
-          RENICE_SHOT_VERSION: ${{ github.event.release.tag_name }}
+          RENICE_SHOT_VERSION: ${{ github.event.release.tag_name || inputs.tag }}
       - name: Upload GitHub release artifact
+        if: github.event_name == 'release' || inputs.target == 'all' || inputs.target == 'github'
         run: gh release upload "$RELEASE_TAG" "build/libs/renice-shot-$RELEASE_TAG.jar" --clobber
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ github.event.release.tag_name }}
-      - name: Upload to external sites
-        run: ./gradlew publishMods
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      - name: Upload to CurseForge
+        if: github.event_name == 'release' || inputs.target == 'all' || inputs.target == 'curseforge'
+        run: ./gradlew publishCurseforge
         env:
-          RENICE_SHOT_VERSION: ${{ github.event.release.tag_name }}
+          RENICE_SHOT_VERSION: ${{ github.event.release.tag_name || inputs.tag }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+      - name: Upload to Modrinth
+        if: github.event_name == 'release' || inputs.target == 'all' || inputs.target == 'modrinth'
+        run: ./gradlew publishModrinth
+        env:
+          RENICE_SHOT_VERSION: ${{ github.event.release.tag_name || inputs.tag }}
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
