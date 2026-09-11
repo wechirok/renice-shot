@@ -39,7 +39,6 @@ import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.glfw.GLFW;
 
 import java.io.IOException;
 import java.nio.file.FileAlreadyExistsException;
@@ -52,8 +51,8 @@ public class ReniceShot {
 
     public static final KeyMapping SCREENSHOT_BINDING = new KeyMapping(
             "key.renice-shot.screenshot",
-            InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_F9,
+            InputConstants.Type.KEYBOARD,
+            InputConstants.KEY_F9,
             KeyMapping.Category.MISC);
 
     private static CaptureTask task;

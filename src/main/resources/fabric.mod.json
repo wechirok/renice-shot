@@ -18,8 +18,8 @@
   "name": "Renice Shot",
   "description": "Take high resolution screenshots because why not",
   "depends": {
-    "fabricloader": ">=0.19.3",
-    "minecraft": "~${minecraft_version}",
+    "fabricloader": ">=0.19.5",
+    "minecraft": "${minecraft_dependency}",
     "java": ">=25",
     "fabric-api": "*"
   },
