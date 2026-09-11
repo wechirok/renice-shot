@@ -4,9 +4,10 @@ plugins {
 }
 
 group = "me.wechirok"
-version = System.getenv("RENICE_SHOT_VERSION") ?: "1.0.1+mc26.3-rc-1"
+version = System.getenv("RENICE_SHOT_VERSION") ?: "1.1.0+mc26.3-rc-1"
 
 String mod_version = version.toString()
+String release_tag = mod_version.replace("+", "%2B")
 String minecraft_version = "26.3-rc-1"
 String minecraft_dependency = "26.3-rc.1"
 
@@ -69,7 +70,7 @@ processResources {
 
 publishMods {
     displayName = "Renice Shot ${project.version}"
-    changelog = "View changelog at [the release page](https://github.com/wechirok/renice-shot/releases/tag/${project.version})"
+    changelog = "View changelog at [the release page](https://github.com/wechirok/renice-shot/releases/tag/${release_tag})."
     dryRun = providers.environmentVariable("PUBLISH_DRY_RUN").orElse("false").get().toBoolean()
 
     if (mod_version.contains("alpha")) {
