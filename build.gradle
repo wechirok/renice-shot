@@ -4,12 +4,12 @@ plugins {
 }
 
 group = "me.wechirok"
-version = System.getenv("RENICE_SHOT_VERSION") ?: "1.1.0+mc26.3-rc-2"
+version = System.getenv("RENICE_SHOT_VERSION") ?: "1.1.0+mc26.3-rc-3"
 
 String mod_version = version.toString()
 String release_tag = mod_version.replace("+", "%2B")
-String minecraft_version = "26.3-rc-2"
-String minecraft_dependency = "26.3-rc.2"
+String minecraft_version = "26.3-rc-3"
+String minecraft_dependency = "26.3-rc.3"
 String curseforge_minecraft_version = minecraft_version.contains("-") ? "${minecraft_version.substring(0, minecraft_version.indexOf('-'))}-snapshot" : minecraft_version
 
 repositories {
