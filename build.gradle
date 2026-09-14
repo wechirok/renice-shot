@@ -100,8 +100,14 @@ publishMods {
         accessToken = providers.environmentVariable("MODRINTH_API_KEY")
         projectId = "ZDCwiIc3"
         minecraftVersions.add(minecraft_version)
-        requires("fabric-api")
-        optional("modmenu")
-        optional("cloth-config")
+        requires {
+            id = "P7dR8mSH"
+        }
+        optional {
+            id = "mOgUt4GM"
+        }
+        optional {
+            id = "9s6osm5g"
+        }
     }
 }
