@@ -10,7 +10,8 @@ String mod_version = version.toString()
 String release_tag = mod_version.replace("+", "%2B")
 String minecraft_version = "26.3"
 String minecraft_dependency = "26.3"
-String curseforge_minecraft_version = minecraft_version.contains("-") ? "${minecraft_version.substring(0, minecraft_version.indexOf('-'))}-snapshot" : minecraft_version
+String curseforge_minecraft_version = System.getenv("CURSEFORGE_MINECRAFT_VERSION")?.trim()
+        ?: (minecraft_version.contains("-") ? "${minecraft_version.substring(0, minecraft_version.indexOf('-'))}-snapshot" : minecraft_version)
 
 repositories {
     maven {

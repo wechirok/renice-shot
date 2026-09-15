@@ -20,6 +20,10 @@ on:
           - github
           - modrinth
           - curseforge
+      curseforge_minecraft_version:
+        description: CurseForge Minecraft version override
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -56,6 +60,7 @@ jobs:
         run: ./gradlew publishCurseforge
         env:
           RENICE_SHOT_VERSION: ${{ github.event.release.tag_name || inputs.tag }}
+          CURSEFORGE_MINECRAFT_VERSION: ${{ inputs.curseforge_minecraft_version }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
       - name: Upload to Modrinth
         if: github.event_name == 'release' || inputs.target == 'all' || inputs.target == 'modrinth'
