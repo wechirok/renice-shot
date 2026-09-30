@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Sử dụng định dạng tên tệp khác",
   "renice-shot.config.custom_file_name.tooltip": "Sử dụng %time% cho thời gian,\n %world% cho tên thế giới hoặc máy chủ",
   "renice-shot.config.override_screenshot_key": "Ghi đè ảnh chụp màn hình bình thường bằng Renice Shot",
+  "renice-shot.config.override_mod_screenshots": "Ghi đè ảnh chụp màn hình do các mod khác yêu cầu bằng Renice Shot",
   "renice-shot.config.hide_hud": "Tự động ẩn HUD",
   "renice-shot.config.save_file": "Lưu tệp ảnh chụp màn hình",
   "renice-shot.config.disable_gui_scaling": "Tắt mở rộng GUI",

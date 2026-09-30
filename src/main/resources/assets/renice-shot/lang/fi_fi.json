@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Käytä omaa tiedostonimimuotoa",
   "renice-shot.config.custom_file_name.tooltip": "%time% korvataan ajalla,\n %world% maailman tai palvelimen nimellä",
   "renice-shot.config.override_screenshot_key": "Korvaa tavallinen kuvankaappaus Renice Shotilla",
+  "renice-shot.config.override_mod_screenshots": "Korvaa muiden modien pyytämät kuvankaappaukset Renice Shotilla",
   "renice-shot.config.save_file": "Tallenna kuvankaappaustiedosto",
   "renice-shot.config.width": "Kuvankaappauksen leveys",
   "renice-shot.config.height": "Kuvankaappauksen korkeus",

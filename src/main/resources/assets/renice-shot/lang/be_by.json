@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Выкарыстоўваць іншую назву файла",
   "renice-shot.config.custom_file_name.tooltip": "Выкарыстоўваць %time% для часу,\n %world% для свету ці серверу",
   "renice-shot.config.override_screenshot_key": "Перазапісаць звычайны скрыншот Renice Shot",
+  "renice-shot.config.override_mod_screenshots": "Замяніць скрыншоты, запытаныя іншымі модамі, на Renice Shot",
   "renice-shot.config.hide_hud": "Аўтаматычна хаваць HUD",
   "renice-shot.config.save_file": "Захаваць файл скрыншоту",
   "renice-shot.config.disable_gui_scaling": "Адключыць маштабаванне GUI",

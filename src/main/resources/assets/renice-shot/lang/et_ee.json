@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Use different filename format",
   "renice-shot.config.custom_file_name.tooltip": "Use %time% for the time,\n %world% for world or server name",
   "renice-shot.config.override_screenshot_key": "Tee tavalise kuvatõmmise asemel Renice Shoti kuvatõmmis",
+  "renice-shot.config.override_mod_screenshots": "Asenda teiste modide soovitud kuvatõmmised Renice Shotiga",
   "renice-shot.config.save_file": "Save the screenshot file",
   "renice-shot.config.width": "Kuvatõmmise laius",
   "renice-shot.config.height": "Kuvatõmmise kõrgus",

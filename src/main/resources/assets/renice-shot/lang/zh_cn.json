@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "使用不同的文件名格式",
   "renice-shot.config.custom_file_name.tooltip": "使用 %time% 来表示时间，\n使用 %world% 来表示世界或服务器名称。",
   "renice-shot.config.override_screenshot_key": "使用 Renice Shot 替换原版默认的截图功能",
+  "renice-shot.config.override_mod_screenshots": "使用 Renice Shot 替换其他模组请求的截图",
   "renice-shot.config.hide_hud": "自动隐藏 HUD",
   "renice-shot.config.save_file": "保存截图文件",
   "renice-shot.config.disable_gui_scaling": "禁用界面尺寸缩放",

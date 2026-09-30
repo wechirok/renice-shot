@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Використовувати інший формат назви файлу",
   "renice-shot.config.custom_file_name.tooltip": "Умовні позначення:\n%time% - час створення знімку\n%world% - назва світу або серверу",
   "renice-shot.config.override_screenshot_key": "Замінити стандартний знімок на Renice Shot",
+  "renice-shot.config.override_mod_screenshots": "Замінити знімки екрана, які запитують інші моди, на Renice Shot",
   "renice-shot.config.save_file": "Зберегти файл знімка",
   "renice-shot.config.width": "Ширина знімка",
   "renice-shot.config.height": "Висота знімка",

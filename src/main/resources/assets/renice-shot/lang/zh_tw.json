@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "使用不同的檔案名稱格式",
   "renice-shot.config.custom_file_name.tooltip": "用 %time% 代替時間，\n用 %world% 代替世界或伺服器名稱",
   "renice-shot.config.override_screenshot_key": "用 Renice Shot 覆蓋一般螢幕擷取畫面",
+  "renice-shot.config.override_mod_screenshots": "用 Renice Shot 覆蓋其他模組要求的螢幕擷取畫面",
   "renice-shot.config.hide_hud": "自動隱藏 HUD",
   "renice-shot.config.save_file": "儲存螢幕擷取畫面檔案",
   "renice-shot.config.disable_gui_scaling": "停用介面大小",

@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Anderes Dateinamenformat verwenden",
   "renice-shot.config.custom_file_name.tooltip": "Verwende %time% für die Uhrzeit,\n %world% für den Welt- oder Server Bild-namen",
   "renice-shot.config.override_screenshot_key": "Normalen Screenshot mit Renice Shot überschreiben",
+  "renice-shot.config.override_mod_screenshots": "Von anderen Mods angeforderte Screenshots mit Renice Shot überschreiben",
   "renice-shot.config.save_file": "Speichert die Screenshot-Datei",
   "renice-shot.config.width": "Screenshot Breite",
   "renice-shot.config.height": "Screenshot Höhe",
