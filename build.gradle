@@ -12,7 +12,7 @@ String minecraft_version = providers.gradleProperty("minecraft_version")
 if (!(minecraft_version in ["26.2", "26.3"])) {
     throw new GradleException("Unsupported Minecraft version: ${minecraft_version}")
 }
-version = release_version ?: "1.2.0-beta.2+mc${minecraft_version}"
+version = release_version ?: "1.2.1+mc${minecraft_version}"
 
 String mod_version = version.toString()
 String release_tag = mod_version.replace("+", "%2B")
