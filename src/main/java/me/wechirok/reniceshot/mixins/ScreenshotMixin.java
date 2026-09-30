@@ -31,7 +31,7 @@ public class ScreenshotMixin {
     @WrapMethod(method = "grab(Ljava/io/File;Ljava/lang/String;Lcom/mojang/blaze3d/pipeline/RenderTarget;ILjava/util/function/Consumer;)V")
     private static void capture(File gameDirectory, String fileName, RenderTarget renderTarget, int downscale,
                                 Consumer<Component> messageReceiver, Operation<Void> original) {
-        if (Config.OVERRIDE_SCREENSHOT_KEY
+        if (Config.OVERRIDE_MOD_SCREENSHOTS && !ReniceShot.isVanillaScreenshotKey()
                 && renderTarget == Minecraft.getInstance().gameRenderer.mainRenderTarget()) {
             ReniceShot.startCapture(gameDirectory, fileName, downscale, messageReceiver,
                     task -> original.call(gameDirectory, fileName, renderTarget, downscale, task));

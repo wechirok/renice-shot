@@ -4,6 +4,7 @@
   "renice-shot.config.custom_file_name": "Формат имени файла",
   "renice-shot.config.custom_file_name.tooltip": "Используйте %time% для времени,\n%world% для имени мира или сервера",
   "renice-shot.config.override_screenshot_key": "Заменить обычный скриншот на Renice Shot",
+  "renice-shot.config.override_mod_screenshots": "Заменить скриншоты по запросу других модов на Renice Shot",
   "renice-shot.config.hide_hud": "Автоматически скрывает интерфейс",
   "renice-shot.config.save_file": "Сохранять файл скриншота",
   "renice-shot.config.disable_gui_scaling": "Отключить масштабирование интерфейса",

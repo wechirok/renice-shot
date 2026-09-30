@@ -56,6 +56,11 @@ public class ClothConfigBridge implements ConfigScreenFactory<Screen> {
                 .setSaveConsumer(b -> Config.OVERRIDE_SCREENSHOT_KEY = b)
                 .build());
 
+        category.addEntry(entryBuilder.startBooleanToggle(Component.translatable("renice-shot.config.override_mod_screenshots"), Config.OVERRIDE_MOD_SCREENSHOTS)
+                .setDefaultValue(false)
+                .setSaveConsumer(b -> Config.OVERRIDE_MOD_SCREENSHOTS = b)
+                .build());
+
         category.addEntry(entryBuilder.startBooleanToggle(Component.translatable("renice-shot.config.hide_hud"), Config.HIDE_HUD)
                 .setDefaultValue(false)
                 .setSaveConsumer(b -> Config.HIDE_HUD = b)

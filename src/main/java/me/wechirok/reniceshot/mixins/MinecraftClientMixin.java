@@ -26,7 +26,10 @@
 package me.wechirok.reniceshot.mixins;
 
 import com.mojang.blaze3d.platform.InputConstants;
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import me.wechirok.reniceshot.ReniceShot;
+import me.wechirok.reniceshot.config.Config;
 import net.minecraft.client.Minecraft;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
@@ -47,6 +50,15 @@ public class MinecraftClientMixin {
     private void preScreenshot(InputConstants.Key key, boolean controlDown, CallbackInfoReturnable<Boolean> cir) {
         if (ReniceShot.SCREENSHOT_BINDING.matches(key)) {
             ReniceShot.startCapture();
+        }
+    }
+
+    @WrapOperation(method = "handleGlobalKeyPress", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Screenshot;grab(Lnet/minecraft/client/Minecraft;Z)V"))
+    private void screenshotFromKey(Minecraft minecraft, boolean controlDown, Operation<Void> original) {
+        if (Config.OVERRIDE_SCREENSHOT_KEY) {
+            ReniceShot.startCapture();
+        } else {
+            ReniceShot.withVanillaScreenshotKey(() -> original.call(minecraft, controlDown));
         }
     }
 }

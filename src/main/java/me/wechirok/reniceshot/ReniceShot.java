@@ -59,7 +59,21 @@ public class ReniceShot {
             KeyMapping.Category.MISC);
 
     private static final Queue<CaptureTask> pendingCaptures = new ArrayDeque<>();
+    private static final ThreadLocal<Boolean> vanillaScreenshotKey = new ThreadLocal<>();
     private static CaptureTask task;
+
+    public static void withVanillaScreenshotKey(Runnable screenshot) {
+        vanillaScreenshotKey.set(true);
+        try {
+            screenshot.run();
+        } finally {
+            vanillaScreenshotKey.remove();
+        }
+    }
+
+    public static boolean isVanillaScreenshotKey() {
+        return Boolean.TRUE.equals(vanillaScreenshotKey.get());
+    }
 
     public static void showMessage(Component message) {
         Minecraft minecraft = Minecraft.getInstance();
