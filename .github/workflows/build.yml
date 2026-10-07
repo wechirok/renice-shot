@@ -10,9 +10,6 @@ jobs:
   build:
     if: "! contains(toJSON(github.event.commits.*.message), '[ci skip]')"
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        minecraft: ["26.2", "26.3"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,9 +23,9 @@ jobs:
       - name: Make Gradle wrapper executable
         run: chmod +x gradlew
       - name: Build
-        run: ./gradlew build -Pminecraft_version=${{ matrix.minecraft }}
+        run: ./gradlew build
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: renice-shot-${{ matrix.minecraft }}
+          name: renice-shot-26.4
           path: build/libs/
