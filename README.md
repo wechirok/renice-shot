@@ -6,16 +6,11 @@ A lightweight client-side Fabric mod for taking high-resolution screenshots.
 
 It keeps the familiar [Fabrishot](https://github.com/ramidzkh/fabrishot) workflow while offering faster support for new versions, more reliable screenshot capture, and fixes for some Fabrishot issues.
 
+## Available on [![MODRINTH](https://img.shields.io/badge/MODRINTH-00AF5C?style=for-the-badge&logo=modrinth&logoColor=white&labelColor=000000)](https://modrinth.com/mod/renice-shot) [![CURSEFORGE](https://img.shields.io/badge/CURSEFORGE-F16436?style=for-the-badge&logo=curseforge&logoColor=white&labelColor=000000)](https://www.curseforge.com/minecraft/mc-mods/renice-shot)
+
+---
+
 <br clear="left"/>
-
----
-
-## Download
-
-[![MODRINTH](https://img.shields.io/badge/MODRINTH-00AF5C?style=for-the-badge&logo=modrinth&logoColor=white&labelColor=000000)](https://modrinth.com/mod/renice-shot)
-[![CURSEFORGE](https://img.shields.io/badge/CURSEFORGE-F16436?style=for-the-badge&logo=curseforge&logoColor=white&labelColor=000000)](https://www.curseforge.com/minecraft/mc-mods/renice-shot)
-
----
 
 ## Screenshot controls
 
